@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.crud.dao.InfoMapper">
+    <cache></cache>
+    <!--     eviction="FIFO" flushInterval="60000" readOnly="false" size="1024"-->
+
+    <select id="selectInfos" resultType="info" >
+        select * from table11 where x=#{x} ORDER BY time
+    </select>
+
+    <select id="selectInfosWithTime" resultType="info" >
+        select * from table11 where x=#{x} AND time between #{startTime} AND #{endTime} ORDER BY time
+    </select>
+
+</mapper>

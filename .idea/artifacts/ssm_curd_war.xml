@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ssm-curd:war">
+    <output-path>D:/</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ssm-curd</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ssm-curd.war">
+      <element id="artifact" artifact-name="ssm-curd:war exploded" />
+    </root>
+  </artifact>
+</component>
